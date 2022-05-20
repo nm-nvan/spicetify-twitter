@@ -1,0 +1,8 @@
+{
+    "name": "Twitter",
+    "description": "Theme based on Twitter's desktop client",
+    "preview": "https://github.com/nm-nvan/spicetify-twitter/blob/main/white.png",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini"
+}

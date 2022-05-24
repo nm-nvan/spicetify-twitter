@@ -67,6 +67,28 @@
   opacity: unset !important;
 }
 
+/* replace back and forward arrows
+.main-topBar-button.main-topBar-back path,
+.main-topBar-button.main-topBar-forward path {
+	display:none;
+}
+
+.main-topBar-button.main-topBar-back,
+.main-topBar-button.main-topBar-forward {
+	background-color:var(--spice-text);
+	height:24px;
+	width:24px;
+}
+
+.main-topBar-button.main-topBar-back {
+	-webkit-mask-image: url('./icons/arrow-back-24.svg');
+}
+
+.main-topBar-button.main-topBar-forward {
+	-webkit-mask-image: url('./icons/arrow-forward-24.svg');
+}
+*/
+
 /* user widget */
 .main-userWidget-box {
 	background-color:var(--spice-main);
@@ -848,12 +870,15 @@ a.marketplace-tabBar-headerItemLink.marketplace-tabBar-active {
 }
 
 /*liked songs gradient */
+.collection-collectionEntityHeroCard-likedSongs, 
+.collection-collectionEntityHeroCard-likedSongs:focus-within, 
+.collection-collectionEntityHeroCard-likedSongs:hover,
 .Tfsn0Rm0B0bxLs52ngAm,
 .Tfsn0Rm0B0bxLs52ngAm:focus-within, 
 .Tfsn0Rm0B0bxLs52ngAm:hover,
-.collection-collectionEntityHeroCard-likedSongs, 
-.collection-collectionEntityHeroCard-likedSongs:focus-within, 
-.collection-collectionEntityHeroCard-likedSongs:hover{
+.aex9qhUIr88JmeSSjzVp /*Podcasts Your Episodes graident */,
+.aex9qhUIr88JmeSSjzVp:focus-within, 
+.aex9qhUIr88JmeSSjzVp:hover{
 	background:linear-gradient(149.46deg,var(--spice-button),var(--spice-button-pressed))
 }
 
@@ -910,7 +935,8 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 .fUYMR7LuRXv0KJWFvRZA /* playlist comments */,
 .ebHsEf.main-entityHeader-divider /*year, tracks of album */,
 .UyzJidwrGk3awngSGIwv /* time in album */,
-.main-entityHeader-divider.main-entityHeader-creatorWrapper.kuSGKO1BuKZ3fgas7_T7 /* on collaborative playlists */ {
+.main-entityHeader-divider.main-entityHeader-creatorWrapper.kuSGKO1BuKZ3fgas7_T7 /* on collaborative playlists */,
+.Type__TypeElement-goli3j-0.ebHsEf._q93agegdE655O5zPz6l /*podcast date */ {
 	color: var(--spice-subtext);
 }
 
@@ -1160,6 +1186,10 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 }
 
 .SpVoh9vvBN0kIwzfCiBh /*podcast trailer div */{
+	background-color:var(--spice-card);
+}
+
+.E4I5I7G2CfW32hLWZaqE /* category links */{
 	background-color:var(--spice-card);
 }
 

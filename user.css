@@ -616,19 +616,6 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 	background-color:var(--spice-button) !important;
 }
 
-/* small menu dot buttons. looks better without cricle around. leave as is
-.main-moreButton-button.main-trackList-rowMoreButton {
-	background-color:var(--spice-subtext);
-	-webkit-mask-image: url('./icons/more-16-on.svg');
-}
-
-.main-moreButton-button.main-trackList-rowMoreButton:active,
-.main-moreButton-button.main-trackList-rowMoreButton:focus,
-.main-moreButton-button.main-trackList-rowMoreButton:hover {
-	background-color:var(--spice-button);
-	-webkit-mask-image: url('./icons/more-16-on.svg');
-} */
-
 .main-moreButton-button:active, 
 .main-moreButton-button:focus, 
 .main-moreButton-button:hover /* more button */ {
@@ -974,7 +961,9 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 .main-trackList-active .main-trackList-rowSectionVariable a,
 .main-trackList-active .main-trackList-rowSectionVariable span,
 .main-trackList-active .main-trackList-rowMarker,
-.main-trackList-active .main-trackList-rowDuration {
+.main-trackList-active .main-trackList-rowDuration,
+.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle, 
+.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowMarker {
   color: var(--spice-button) !important;
 }
 

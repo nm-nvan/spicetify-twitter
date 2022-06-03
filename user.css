@@ -638,6 +638,7 @@ input {
   border: solid 1px var(--spice-input-bg) !important;
   padding: 6px 10px 6px 48px;
   color: var(--spice-text) !important;
+  border-radius: 100px !important;
 }
 input:focus {
 	background-color: var(--spice-main) !important;

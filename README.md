@@ -5,11 +5,11 @@ Works on Spotify version 1.1.84.716 and Spicetify versions 2.9.8 & 2.9.9.
 
 COLOR SCHEMES:
 
-White:
-![Twitter-White-Preview](https://raw.githubusercontent.com/nm-nvan/spicetify-twitter/main/white.png)
-
 Dim:
 ![Twitter-Dim-Preview](https://raw.githubusercontent.com/nm-nvan/spicetify-twitter/main/dim.png)
+
+White:
+![Twitter-White-Preview](https://raw.githubusercontent.com/nm-nvan/spicetify-twitter/main/white.png)
 
 Lights Out:
 ![Twitter-Lights-Out-Preview](https://raw.githubusercontent.com/nm-nvan/spicetify-twitter/main/lights-out.png)

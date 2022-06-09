@@ -215,6 +215,9 @@
   background-color: var(--spice-divider);
 }
 
+.fHFuht.I_aApN9pSlbGcpLtFQWw /* rotate folder arrows */ {
+	transform: rotate(-90deg);
+}
 
 [aria-label='Playing'] /* change color of navbar playing icon */{
   color: var(--spice-text);

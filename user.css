@@ -1,4 +1,4 @@
-/* For Spotify Version 1.1.89.862 and Spicetify 2.10.2 */
+/* Optimized for Spotify Version 1.1.89.862 and Spicetify 2.10.2 */
 /* GENERAL */
 :root{
 	--menu-shadow: rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 15px, rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 3px 1px;
@@ -19,7 +19,6 @@
 	font-family: 'Chirp-Regular',spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif !important;
 	box-shadow: none !important;
 	letter-spacing:0em !important;
-
 }
  
  /* COLOUR SETS */
@@ -34,24 +33,24 @@
 
 /* HEADER COLOURS AND GRADIENTS */
 .main-home-homeHeader /*top of home page*/,
-.n87ifzfQlmGX8vkeYGDL /*top of home page TEMP*/,
 .main-rootlist-rootlistDividerGradient /* sidebar divider gradient */,
 .main-entityHeader-backgroundColor /*album cover/name header*/, 
 .main-actionBarBackground-background /*between album cover/name and track list with main action buttons*/,
 .artist-artistDiscography-headerContainer /*artist discography page album headers */,
-._UFTK833WfTNGb4agRTd /* podcast episode top */,
-.Ic3iDUCnC09k55peZBfC /* podcast episode middle */{
+.fEvxx8vl3zTNWsuC8lpx /*artist discography page album headers temp */{
   background-color: unset !important;
   background-image: unset !important;
 }
 
 .main-topBar-background /*top nav bar back/forward/profile background */,
 .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader /*tracklist header row when scrolled down */,
-.artist-artistDiscography-topBar.artist-artistDiscography-topBarScrolled /*top bar on artist discography page */ {
+.artist-artistDiscography-topBar.artist-artistDiscography-topBarScrolled /*top bar on artist discography page */,
+.EvQHNTBhaU3rGCRRlAWj.QplCuuGSoV4updqTSLq9 /*top bar on artist discography page TEMP */{
 	background-color:var(--spice-main) !important;
+	border-bottom: 1px solid transparent;
 }
 
-.main-entityHeader-overlay /*for the gradient on artist pic when scrolling main-entityHeader-overlay */ { 
+.main-entityHeader-overlay /*for the gradient on artist banner pic when scrolling main-entityHeader-overlay */ { 
 	--bgColor: transparent !important; 
 }
 
@@ -66,28 +65,6 @@
 .main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn {
   opacity: unset !important;
 }
-
-/* replace back and forward arrows
-.main-topBar-button.main-topBar-back path,
-.main-topBar-button.main-topBar-forward path {
-	display:none;
-}
-
-.main-topBar-button.main-topBar-back,
-.main-topBar-button.main-topBar-forward {
-	background-color:var(--spice-text);
-	height:24px;
-	width:24px;
-}
-
-.main-topBar-button.main-topBar-back {
-	-webkit-mask-image: url('./icons/arrow-back-24.svg');
-}
-
-.main-topBar-button.main-topBar-forward {
-	-webkit-mask-image: url('./icons/arrow-forward-24.svg');
-}
-*/
 
 /* user widget */
 .main-userWidget-box {
@@ -146,12 +123,8 @@
 }
 
 .main-navBar-navBarItem /* adjust nav bar tabs */,
-div.GlueDropTarget.personal-library /*adjust library tabs */{
+div.GlueDropTarget.personal-library /*adjust playlist & liked tabs */{
 	padding:5px 8px;
-}
-
-.main-navBar-entryPoints > div:first-of-type /* change top margin of navbar options */{
-  margin-top: 0px;
 }
 
 .main-navBar-navBarLink /* main item link colour */,
@@ -184,8 +157,8 @@ a.main-collectionLinkButton-collectionLinkButton.main-collectionLinkButton-selec
 }
 
 div.GlueDropTarget.personal-library >*.active,
-div.GlueDropTarget.personal-library >*.active:focus {
-	background:unset;
+div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while Like Songs/Episodes are active */ {
+	background:unset; 
 }
 
 .PJuB4n2TjjZFBiWAW2zx /* download status bar under Your Libary while downloading */ {
@@ -194,9 +167,7 @@ div.GlueDropTarget.personal-library >*.active:focus {
 
 /* change color of navbar icons */
 .main-createPlaylistButton-createPlaylistIcon,
-.main-yourEpisodesButton-yourEpisodesIcon,
-.q3ABXYJT9JZIzXOOtVuO /*createPlaylistIcon TEMP */,
-.vCaNVEuqazhZFQNcVHZj /* yourEpisodesIcon TEMP */ {
+.main-yourEpisodesButton-yourEpisodesIcon {
   background: unset;
   color: var(--spice-text);
   border-radius:4px;
@@ -210,26 +181,19 @@ div.GlueDropTarget.personal-library >*.active:focus {
 	width:20px;
 }
 
-.main-yourEpisodesButton-yourEpisodesIcon path /* yourEpisodesIcon color */ {
+.main-yourEpisodesButton-yourEpisodesIcon path /* your Episodes Icon color */ {
   fill: var(--spice-text);
 }
 
 /* remove opacity of navbar buttons */
 .main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-icon, 
 .main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-collectionLinkText, 
-.main-createPlaylistButton-button,
-.IPVjkkhh06nan7aZK7Bx,
-.r9YzlaAPnM2LGK97GSfa .bFQ9NOIn1bDs8tTH0ebQ, 
-.r9YzlaAPnM2LGK97GSfa .ot6VAZq1Xfbw2Vh8Qt_A {
+.main-createPlaylistButton-button {
   opacity: unset;
 }
 
 .main-rootlist-rootlistDivider /* change color of divider */{
   background-color: var(--spice-divider);
-}
-
-.fHFuht.I_aApN9pSlbGcpLtFQWw /* rotate folder arrows */ {
-	transform: rotate(-90deg);
 }
 
 [aria-label='Playing'] /* change color of navbar playing icon */{
@@ -269,7 +233,11 @@ div.GlueDropTarget.personal-library >*.active:focus {
 .main-coverSlotExpandedCollapseButton-collapseButton:focus, 
 .main-coverSlotExpandedCollapseButton-collapseButton:hover /*expanded album art button */,
 .main-coverSlotCollapsed-expandButton:focus, 
-.main-coverSlotCollapsed-expandButton:hover /*collapsed album art button */{
+.main-coverSlotCollapsed-expandButton:hover /*collapsed album art button */,
+.g6ZgzRfiHjsTLskeyI0J:focus /*this and next three are temp for above 4 */, 
+.g6ZgzRfiHjsTLskeyI0J:hover,
+.qWcH8e2laY9sYOuCsOAx:focus, 
+.qWcH8e2laY9sYOuCsOAx:hover{
 	transform:scale(1.0);
 }
 
@@ -312,11 +280,6 @@ div.GlueDropTarget.personal-library >*.active:focus {
 .playback-bar /* re-position playback bar */{
   bottom: 83px;
   position: absolute;
-}
-
-.now-playing-bar-container>div:first-child:nth-last-child(2) .playback-bar, 
-.main-nowPlayingBar-container>div:first-child:nth-last-child(2) .playback-bar {
-  bottom: 107px;
 }
 
 .player-controls__buttons /* remove marin under playback controls */ {
@@ -706,7 +669,7 @@ input.amTaUy6eMlbKh0wzrOnb /* "Let's find something for your playlist input */ {
 
 /* circle around x icon in small search bars */
 .EsqEJ_NPrHsPkTbX4FW8 /*clear filter input */,
-.YVhFT5kSA0aTMbgmACwa /* clear "Let's find something" input */ {
+.eWEdt6BMCWITt5najIg_ /* clear "Let's find something" input */ {
 	background-color:var(--spice-button);
 	border-radius:100%;
 	padding:4px;
@@ -714,10 +677,9 @@ input.amTaUy6eMlbKh0wzrOnb /* "Let's find something for your playlist input */ {
 }
 
 .EsqEJ_NPrHsPkTbX4FW8:hover,
-.YVhFT5kSA0aTMbgmACwa:hover  {
+.eWEdt6BMCWITt5najIg_:hover  {
 background-color:var(--spice-button-active);
 }
-
 
 /* drop down combo boxes */
 .w6j_vX6SF5IxSXrrkYw5 /*Re-Order drop down box */,
@@ -795,16 +757,10 @@ span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
 
 /* HOME PAGE */
 /* hide banner ads */
-.main-leaderboardComponent-container {
-  display: none;
-}
-
-.WiPggcPDzbwGxoxwLWFf.contentSpacing {
-  display: none;
-}
-
+.main-leaderboardComponent-container,
+.WiPggcPDzbwGxoxwLWFf.contentSpacing,
 .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer,
-.desktoproutes-homepage-takeover-ad-hptoComponent-container {
+.desktoproutes-homepage-takeover-ad-hptoComponent-container  {
   display: none !important;
 }
 
@@ -1100,11 +1056,6 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 }
 
 /* ARTIST DISCOGRAPHY PAGE */
-.EvQHNTBhaU3rGCRRlAWj.QplCuuGSoV4updqTSLq9 /* fixes colour of floating header */ {
-	background-color:var(--spice-main);
-	border-bottom:1px solid transparent;
-}
-
 .artist-artistDiscography-button /* artist discography page icons */ {
 	color:var(--spice-subtext);
 }
@@ -1125,17 +1076,13 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 	background:var(--spice-card);
 }
 
-.fEvxx8vl3zTNWsuC8lpx /*remove gradient from album headers */{
-	background: unset;
-}
-
 /* CONCERT DATE PAGE */
 .AS9iOElYCthTPYkL00ay:hover{
 	background:var(--tracklist-hover);
 }
 
 /* PODCASTS */
-.cJJXVm4gQW6AdfCQRhpX /* removes bad divider */{
+.p6DKqBcwmVtxmHt8ju43 /* removes un-needed divider */{
 	display:none;
 }
 

@@ -1,4 +1,4 @@
-/* For Spotify Version 1.1.84.716 and Spicetify Versions 2.9.8, 2.9.9, 2.10.1 */
+/* For Spotify Version 1.1.84.716 and Spicetify 2.10.2 */
 /* GENERAL */
 :root{
 	--menu-shadow: rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 15px, rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 3px 1px;
@@ -115,7 +115,8 @@
 .home-icon path,
 .home-active-icon path,
 .search-icon path,
-.search-active-icon path {
+.search-active-icon path,
+.main-likedSongsButton-likedSongsIcon path {
   display: none !important;
 }
 
@@ -139,34 +140,52 @@
 	background-color: var(--spice-text); 
 }
 
-.main-navBar-entryPoints > div:first-of-type /* change top margin of navbar options */{
-  margin-top: 20px;
+.main-likedSongsButton-likedSongsIcon {
+	-webkit-mask-image: url('./icons/heart-24-on.svg');
+	background: var(--spice-heart); 	
 }
 
-.main-navBar-navBarItem /* adjust nav bar tabs */{
+.main-navBar-navBarItem /* adjust nav bar tabs */,
+div.GlueDropTarget.personal-library /*adjust library tabs */{
 	padding:5px 8px;
 }
 
-.main-navBar-navBarLink /* main item link colour */{
+.main-navBar-entryPoints > div:first-of-type /* change top margin of navbar options */{
+  margin-top: 0px;
+}
+
+.main-navBar-navBarLink /* main item link colour */,
+.main-createPlaylistButton-button /*create playlist */,
+a.main-collectionLinkButton-collectionLinkButton /* liked songs */{
 	color:var(--spice-text);
 	width:85%;
 }
 
 .main-navBar-navBarLink .Type__TypeElement-goli3j-0.eHCcSU.ellipsis-one-line /* main item link weight */,
-.Type__TypeElement-goli3j-0.eHCcSU.J4xXuqyaJnnwS6s2p3ZB.standalone-ellipsis-one-line /* Create Playlist */,
-.Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.ot6VAZq1Xfbw2Vh8Qt_A /* Liked Songs & Your Episodes */ {
+.Type__TypeElement-goli3j-0.eHCcSU.main-createPlaylistButton-text.standalone-ellipsis-one-line /* Create Playlist */,
+.Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* Liked Songs & Your Episodes */ {
 	font-weight:500;
 }
 
-.main-navBar-navBarLinkActive .Type__TypeElement-goli3j-0.eHCcSU.ellipsis-one-line /* active main item link weight */{
+.main-navBar-navBarLinkActive .Type__TypeElement-goli3j-0.eHCcSU.ellipsis-one-line /* active main item link weight */,
+a.main-collectionLinkButton-collectionLinkButton.main-collectionLinkButton-selected.active .Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* active Liked Songs or Your Episodes */{
 	font-weight:700;
 }
 
 .main-navBar-navBarLink:focus,
-.main-navBar-navBarLink:hover {
-	background-color: var(--nav-active);
-	border-radius:100px;
+.main-navBar-navBarLink:hover,
+.main-createPlaylistButton-button:not(.Jz6S0hp1vLCJM0pIKwow):focus, 
+.main-createPlaylistButton-button:not(.Jz6S0hp1vLCJM0pIKwow):hover,
+.main-collectionLinkButton-collectionLinkButton:focus, 
+.main-collectionLinkButton-collectionLinkButton:hover {
+	background-color: var(--nav-active) !important;
+	border-radius:100px !important;
     transition: none;
+}
+
+div.GlueDropTarget.personal-library >*.active,
+div.GlueDropTarget.personal-library >*.active:focus {
+	background:unset;
 }
 
 .PJuB4n2TjjZFBiWAW2zx /* download status bar under Your Libary while downloading */ {
@@ -175,13 +194,11 @@
 
 /* change color of navbar icons */
 .main-createPlaylistButton-createPlaylistIcon,
-.main-likedSongsButton-likedSongsIcon,
 .main-yourEpisodesButton-yourEpisodesIcon,
 .q3ABXYJT9JZIzXOOtVuO /*createPlaylistIcon TEMP */,
-.Nd_DeCpszONzyaLe5Wd1 /*likeSongIcon TEMP */,
 .vCaNVEuqazhZFQNcVHZj /* yourEpisodesIcon TEMP */ {
-  background: var(--spice-button);
-  color: white;
+  background: unset;
+  color: var(--spice-text);
   border-radius:4px;
 }
 
@@ -192,13 +209,13 @@
 .q3ABXYJT9JZIzXOOtVuO svg /*createPlaylistIcon TEMP */,
 .Nd_DeCpszONzyaLe5Wd1 svg /*likeSongIcon TEMP */,
 .vCaNVEuqazhZFQNcVHZj svg /* yourEpisodesIcon TEMP */ {
-	height:16px;
-	width:16px;
+	height:24px;
+	width:24px;
 }
 
 .main-yourEpisodesButton-yourEpisodesIcon path /* yourEpisodesIcon color */,
 .vCaNVEuqazhZFQNcVHZj path /* yourEpisodesIcon TEMP */{
-  fill: white;
+  fill: var(--spice-text);
 }
 
 /* remove opacity of navbar buttons */
@@ -685,7 +702,7 @@ input.amTaUy6eMlbKh0wzrOnb /* "Let's find something for your playlist input */ {
 
 /* x icon in small search bars */
 .EsqEJ_NPrHsPkTbX4FW8 svg /*clear filter input */,
-.YVhFT5kSA0aTMbgmACwa svg /* clear "Let's find something" input */ {
+.eWEdt6BMCWITt5najIg_ svg /* clear "Let's find something" input */ {
 	color:var(--spice-main);
 	height:12px;
 	width:12px;
@@ -875,6 +892,7 @@ a.marketplace-tabBar-headerItemLink.marketplace-tabBar-active {
 
 /* Text in Liked Songs Gradient */
 .main-heroCard-card.VYdojyqT_bc44_XgSBX0.Tfsn0Rm0B0bxLs52ngAm .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link,
+.main-heroCard-card.VYdojyqT_bc44_XgSBX0.aex9qhUIr88JmeSSjzVp .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /*podcast Your Episodes card text */,
 div.VYdojyqT_bc44_XgSBX0,
 .nMYPrV7uEdDk8YlfNqLe,
 .collection-collectionEntityHeroCard-likedSongs .main-cardHeader-text.main-type-alto,

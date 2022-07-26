@@ -1,4 +1,4 @@
-/* Optimized for Spotify Version 1.1.89.862 and Spicetify 2.10.2 */
+/* Optimized for Spotify Version 1.1.89.862 and Spicetify versions 2.10.2 2.11.1 */
 /* GENERAL */
 :root{
 	--menu-shadow: rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 15px, rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 3px 1px;
@@ -206,6 +206,24 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 	color:var(--spice-download) !important;
 }
 
+.hcxPtZcvjM07S6ydT685 path /* downloaded playlist icon */{
+	display:none !important;
+}
+
+.hcxPtZcvjM07S6ydT685 /* downloaded playlist icon */{
+	-webkit-mask-image: url('./icons/download-12-on.svg');
+	background-color: var(--spice-download);
+}	
+
+.main-card-DownloadStatusIndicator path /*download icon on home page cards */{
+	display:none !important;
+}
+
+.main-card-DownloadStatusIndicator /*download icon on home page cards */{
+	-webkit-mask-image: url('./icons/download-16-on.svg');
+	background-color: var(--spice-download);
+}
+
 .main-progressRing-circleColor /*now downloading playlist status icon */{
 	stroke:var(--spice-download);
 }
@@ -225,9 +243,13 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
   bottom: auto;
 }
 
-.main-coverSlotExpandedCollapseButton-collapseButton /*collapse album art button */{
-  right: 10px !important;
-  top: 10px !important;
+.main-coverSlotExpandedCollapseButton-collapseButton /*collapse album art button */,
+.g6ZgzRfiHjsTLskeyI0J /*temp for above*/,
+.main-coverSlotCollapsed-container .cover-art-image /* cover art when collapsed into player */,
+.main-coverSlotCollapsed-container .qWcH8e2laY9sYOuCsOAx /*temp for above*/,
+.main-coverSlotCollapsed-expandButton{
+	color:var(--spice-text);
+	background-color:rgba(var(--spice-rgb-shadow),30%);
 }
 
 .main-coverSlotExpandedCollapseButton-collapseButton:focus, 
@@ -239,9 +261,11 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 .qWcH8e2laY9sYOuCsOAx:focus, 
 .qWcH8e2laY9sYOuCsOAx:hover{
 	transform:scale(1.0);
+	background-color:rgba(var(--spice-rgb-shadow),45%);
 }
 
-.main-coverSlotCollapsed-container .cover-art-image /* round cover art when collapsed */{
+.main-coverSlotCollapsed-container .cover-art-image /* cover art when collapsed into player */,
+.main-coverSlotCollapsed-container .qWcH8e2laY9sYOuCsOAx /*temp for above*/{
   border-radius: 4px;
 }
 
@@ -636,7 +660,7 @@ input:focus {
   height: 17px !important;
 }
 
-/* x icon on main 'search' tab */
+/* x icon on main 'search' tab and clearing Recent Searches */
 .x-searchInput-searchInputClearButton svg{
   color: var(--spice-main);
   height: 16px;
@@ -652,6 +676,14 @@ input:focus {
 .x-searchInput-searchInputClearButton:hover {
 background-color:var(--spice-button-active);
 }
+
+/* Recent Searches Xs */
+.xmJl0s8mcJ3bfhtnoaP1:focus, 
+.xmJl0s8mcJ3bfhtnoaP1:hover {
+	transform:scale(1.0) !important;
+	background-color:rgba(var(--spice-rgb-shadow),45%);
+}
+
 
 /* filter and re-order boxes */
 input.QZhV0hWVKlExlKr266jo /*filter input */,
@@ -965,16 +997,16 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 	color:var(--spice-button-pressed);
 }
 
-p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by musixmatch"*/{
+p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by musixmatch"*/{
 	visibility: hidden;
 }
 
 /* ARTIST PAGE */
-.bLZSro path{
+.NJEYP path /* hide stock verified artist badge */{
 	display:none;
 }
 
-.bLZSro /* verified artist badge bg */ {
+.NJEYP /* verified artist badge bg */ {
     -webkit-mask-image: url("./icons/verified-24.svg");
 	background-color:var(--spice-button);
 }
@@ -1019,14 +1051,14 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 	color:white;
 }
 
-.ydlidzq2hSQrvGXn7yni /* tag below artist pick */{
+.ydlidzq2hSQrvGXn7yni /* tag below artist pick v1.1.89 not sure what this is*/{
 	background:var(--spice-card);
 	color:var(--spice-text);
 	padding:4px 6px;
 }
 
 .artist-artistAbout-rank /* rank circle colour in bio */,
-.tQp8UOu8jGduQXUTcv0c {
+.tQp8UOu8jGduQXUTcv0c /*temp*/ {
 	background:var(--spice-button);
 	color:#F7F9F9;
 }
@@ -1152,9 +1184,11 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 	background:var(--spice-button);
 	border-radius:var(--menu-radius);
 }
-
-.main-yourEpisodes-coverContainer path /*circular fill */,
-.oezNMICqWdJHdR3QV9La path{
+.ioDnN5QkrvTdd8oOrl2h svg /* podcast bookmark icon size */{
+	height:128px;
+	width:128px;
+}
+.oezNMICqWdJHdR3QV9La path /* podcast bookmark icon fill */{
 	fill:white;
 }
 
@@ -1220,4 +1254,3 @@ p.Type__TypeElement-goli3j-0.ebHsEf.I4K12o0qDoITOLr2AEs0 /* hides "lyrics by mus
 .main-notificationBubble-isNotice {
 	color:#F7F9F9;
 }
-

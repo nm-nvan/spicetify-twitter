@@ -470,8 +470,10 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 	color:var(--spice-text);
 }
 
-.rezqw3Q4OEPB1m4rmwfw /* fix for playlist bg colour in 1.1.90 */ {
-	background:unset;
+.rezqw3Q4OEPB1m4rmwfw /* fix for playlist bg colour in 1.1.90 */,
+.BL__GuO2JsHMR6RgNfwY /* fix for artist page bg colour in 1.1.90 */,
+.XQIbZRhBVDxK2jEcGfeS /* fix for Tour dates bg colour in 1.1.90 */  {
+	background:var(--spice-main);
 }
 
 /* playlist action buttons */

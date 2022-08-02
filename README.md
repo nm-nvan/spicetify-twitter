@@ -1,7 +1,7 @@
 # Twitter for Spicetify
 
 Theme for Spicetify based on Twitter's desktop theme. Comes with white, dim, and light-out themes, plus each of those three themes in different accent colours.
-Optimized for Spotify Version 1.1.89.862 and Spicetify versions 2.10.2 and 2.11.1.
+Optimized for Spotify Version 1.1.90.859 and Spicetify version 2.11.1.
 
 COLOR SCHEMES:
 

@@ -50,7 +50,7 @@
 	border-bottom: 1px solid transparent;
 }
 
-.rezqw3Q4OEPB1m4rmwfw /* fix for playlist bg colour in 1.1.90 */,
+.playlist-playlist-playlistContent /* fix for playlist bg colour in 1.1.90 */,
 .BL__GuO2JsHMR6RgNfwY /* fix for artist page bg colour in 1.1.90 */,
 .XQIbZRhBVDxK2jEcGfeS /* fix for Tour dates bg colour in 1.1.90 */  {
 	background:var(--spice-main);
@@ -486,7 +486,7 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 .main-actionBar-ActionBarRow > button:not(:first-child) /* colours the heart/download/more options button for light scheme */,
 .main-actionBar-ActionBarRow > svg,
 .main-addButton-button,
-.HbKLiGoYM4dpuK8L4TMX /* download icon */,
+.x-downloadButton-DownloadButton /* download icon */,
 .main-moreButton-button  {
 	color:var(--spice-subtext);
 }
@@ -561,23 +561,23 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 
 /* download buttons */
 
-.main-actionBar-ActionBarRow .HbKLiGoYM4dpuK8L4TMX path,
-.HbKLiGoYM4dpuK8L4TMX path {
+.main-actionBar-ActionBarRow .x-downloadButton-DownloadButton path,
+.x-downloadButton-DownloadButton path {
 	display:none;
 }
 /* Action Bar */
-.main-actionBar-ActionBarRow .HbKLiGoYM4dpuK8L4TMX {
+.main-actionBar-ActionBarRow .x-downloadButton-DownloadButton {
 	background-color:var(--spice-subtext);
 	-webkit-mask-image: url('./icons/download-32-off.svg');
 }
 
-.main-actionBar-ActionBarRow .HbKLiGoYM4dpuK8L4TMX:focus,
-.main-actionBar-ActionBarRow .HbKLiGoYM4dpuK8L4TMX:hover{
+.main-actionBar-ActionBarRow .x-downloadButton-DownloadButton:focus,
+.main-actionBar-ActionBarRow .x-downloadButton-DownloadButton:hover{
 	background-color:var(--spice-download);
 	-webkit-mask-image: url('./icons/download-32-off.svg');
 }
 
-.main-actionBar-ActionBarRow .HbKLiGoYM4dpuK8L4TMX._APVWqivXc4YqgsnpFkP {
+.main-actionBar-ActionBarRow .x-downloadButton-DownloadButton._APVWqivXc4YqgsnpFkP {
 	background-color:var(--spice-download);
 	-webkit-mask-image: url('./icons/download-32-on.svg');
 }

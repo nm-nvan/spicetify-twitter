@@ -50,6 +50,12 @@
 	border-bottom: 1px solid transparent;
 }
 
+.rezqw3Q4OEPB1m4rmwfw /* fix for playlist bg colour in 1.1.90 */,
+.BL__GuO2JsHMR6RgNfwY /* fix for artist page bg colour in 1.1.90 */,
+.XQIbZRhBVDxK2jEcGfeS /* fix for Tour dates bg colour in 1.1.90 */  {
+	background:var(--spice-main);
+}
+
 .main-entityHeader-overlay /*for the gradient on artist banner pic when scrolling main-entityHeader-overlay */ { 
 	--bgColor: transparent !important; 
 }
@@ -411,6 +417,12 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 	display:none;
 }
 
+/* HOME PAGE */
+/* remove Good Morning/Afternoon shelf */
+.rPV8BmHZXaGIGT2HwvBB {
+	display:none;
+}
+
 /* BUTTONS */
 /* inner button icon */
 .ButtonInner-sc-14ud5tc-0 {
@@ -468,12 +480,6 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 
 button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Anyway" to playlists */{
 	color:var(--spice-text);
-}
-
-.rezqw3Q4OEPB1m4rmwfw /* fix for playlist bg colour in 1.1.90 */,
-.BL__GuO2JsHMR6RgNfwY /* fix for artist page bg colour in 1.1.90 */,
-.XQIbZRhBVDxK2jEcGfeS /* fix for Tour dates bg colour in 1.1.90 */  {
-	background:var(--spice-main);
 }
 
 /* playlist action buttons */
@@ -636,7 +642,8 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 	stroke:white;
 }
 
-svg.main-entityHeader-imagePlaceholder.main-card-defaultPlaceholder {
+svg.main-entityHeader-imagePlaceholder.main-card-defaultPlaceholder, 
+.main-entityHeader-imagePlaceholder svg.Svg-sc-1bi12j5-0.EQkJl /*temp */ {
 	color:white;
 }
 
@@ -999,8 +1006,13 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
   --lyrics-color-messaging: var(--spice-text) !important;
 }
 
-.XhqhT8BYwh_Ebk_zFHvA .gaHIufRWhoWbiT8S6zuM:hover /* hovering on lyrics */ {
-	color:var(--spice-button-pressed);
+.Q2RPoHcoxygOoPLXLMww .NHVfxGs2HwmI_fly2JC4.H2J92dVdr0ykdOX5azL1 /*inactive lyrics */ {
+	color:var(--lyrics-color-inactive);
+	opacity:0.5;
+}
+
+.NHVfxGs2HwmI_fly2JC4.H2J92dVdr0ykdOX5azL1:hover /* hover inactive lyrics */ {
+	color:var(--lyrics-color-active);
 }
 
 p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by musixmatch"*/{

@@ -419,7 +419,7 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 
 /* HOME PAGE */
 /* remove Good Morning/Afternoon shelf */
-.rPV8BmHZXaGIGT2HwvBB {
+.view-homeShortcutsGrid-shortcuts {
 	display:none;
 }
 
@@ -583,22 +583,22 @@ button.main-buttons-button.main-button-tertiary.gC5rpi1l_CHdGc8OYjSt /* "Add Any
 }
 
 /* Artist discography and other */
-.HbKLiGoYM4dpuK8L4TMX {
+.x-downloadButton-DownloadButton {
 	background-color:var(--spice-subtext);
 	-webkit-mask-image:url('./icons/download-24-off.svg');
 	padding:1px;
 }
-.HbKLiGoYM4dpuK8L4TMX:hover {
+.x-downloadButton-DownloadButton:hover {
 	background-color:var(--spice-download) !important;
 }
 
-.HbKLiGoYM4dpuK8L4TMX.XvNAiCvnj8kWsiN_AcJK._APVWqivXc4YqgsnpFkP /*downloaded album/episode */{
+.x-downloadButton-DownloadButton.XvNAiCvnj8kWsiN_AcJK._APVWqivXc4YqgsnpFkP /*downloaded album/episode */{
 	background-color:var(--spice-download);
 	-webkit-mask-image:url('./icons/download-24-on.svg');
 }
 
 /* used before I replaced the icons, keep just in case */
-.HbKLiGoYM4dpuK8L4TMX:hover/*download button at top of album/playlist */,
+.x-downloadButton-DownloadButton:hover/*download button at top of album/playlist */,
 .x-downloadButton-button:hover/*download button at top of album/playlist */,
 .main-trackList-rowBadges /*downloaded icons in tracklist */ {
 	color:var(--spice-download) !important;

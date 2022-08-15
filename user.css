@@ -245,14 +245,8 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
   bottom: 107px;
 }
 
-._U2P19b627vsKWCNNffn .playback-bar /* revert playback bar position when in full-screen mode */{
-  bottom: auto;
-}
-
 .main-coverSlotExpandedCollapseButton-collapseButton /*collapse album art button */,
-.g6ZgzRfiHjsTLskeyI0J /*temp for above*/,
 .main-coverSlotCollapsed-container .cover-art-image /* cover art when collapsed into player */,
-.main-coverSlotCollapsed-container .qWcH8e2laY9sYOuCsOAx /*temp for above*/,
 .main-coverSlotCollapsed-expandButton{
 	color:var(--spice-text);
 	background-color:rgba(var(--spice-rgb-shadow),30%);
@@ -261,17 +255,12 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 .main-coverSlotExpandedCollapseButton-collapseButton:focus, 
 .main-coverSlotExpandedCollapseButton-collapseButton:hover /*expanded album art button */,
 .main-coverSlotCollapsed-expandButton:focus, 
-.main-coverSlotCollapsed-expandButton:hover /*collapsed album art button */,
-.g6ZgzRfiHjsTLskeyI0J:focus /*this and next three are temp for above 4 */, 
-.g6ZgzRfiHjsTLskeyI0J:hover,
-.qWcH8e2laY9sYOuCsOAx:focus, 
-.qWcH8e2laY9sYOuCsOAx:hover{
+.main-coverSlotCollapsed-expandButton:hover /*collapsed album art button */{
 	transform:scale(1.0);
 	background-color:rgba(var(--spice-rgb-shadow),45%);
 }
 
-.main-coverSlotCollapsed-container .cover-art-image /* cover art when collapsed into player */,
-.main-coverSlotCollapsed-container .qWcH8e2laY9sYOuCsOAx /*temp for above*/{
+.main-coverSlotCollapsed-container .cover-art-image /* cover art when collapsed into player */{
   border-radius: 4px;
 }
 
@@ -417,12 +406,6 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 	display:none;
 }
 
-/* HOME PAGE */
-/* remove Good Morning/Afternoon shelf */
-.view-homeShortcutsGrid-shortcuts {
-	display:none;
-}
-
 /* BUTTONS */
 /* inner button icon */
 .ButtonInner-sc-14ud5tc-0 {
@@ -440,6 +423,8 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 .main-buttons-button:hover,
 .main-button-outlined:focus, 
 .main-button-outlined:hover,
+.main-playButton-PlayButton:focus, 
+.main-playButton-PlayButton:hover,
 .jjUWAm:focus,
 .jjUWAm:hover,
 .jEaMNl:hover .ButtonInner-sc-14ud5tc-0, 
@@ -727,24 +712,24 @@ background-color:var(--spice-button-active);
 }
 
 /* drop down combo boxes */
-.w6j_vX6SF5IxSXrrkYw5 /*Re-Order drop down box */,
+.x-sortBox-sortDropdown /*Re-Order drop down box */,
 .fLS8v3_EfBadEerbGVoR /* more releases drop down box */{
 	background-color:var(--spice-player);
 	color:var(--spice-subtext);
 }
 
-.wCl7pMTEE68v1xuZeZiB /* search icon for filter */{
+.x-filterBox-expandButton /* search icon for filter */{
 	background-color:var(--spice-player);
 	color:var(--spice-subtext);
 	border-radius:50%;
 }
 
-.w6j_vX6SF5IxSXrrkYw5:focus,
-.w6j_vX6SF5IxSXrrkYw5:hover,
+.x-sortBox-sortDropdown:focus, 
+.x-sortBox-sortDropdown:hover,
 .fLS8v3_EfBadEerbGVoR:focus, 
 .fLS8v3_EfBadEerbGVoR:hover,
-.wCl7pMTEE68v1xuZeZiB:focus, 
-.wCl7pMTEE68v1xuZeZiB:hover {
+.x-filterBox-expandButton:focus, 
+.x-filterBox-expandButton:hover {
 	background-color:var(--spice-card);
 	color:var(--spice-text);
 }
@@ -809,14 +794,19 @@ span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
   display: none !important;
 }
 
-.Z35BWOA10YGn5uc9YgAp /* Good Morning card */ {
+
+.view-homeShortcutsGrid-shortcuts /* Hide Good Morning/Afternoon cards */{
+	display:none;
+}
+
+.view-homeShortcutsGrid-shortcuts /* Good Morning card */ {
   background-color: var(--spice-player);
   transition: none;
 }
 
-.Z35BWOA10YGn5uc9YgAp:focus-within /* Good Morning cards hover */,
-.Z35BWOA10YGn5uc9YgAp:hover,
-.Z35BWOA10YGn5uc9YgAp[data-context-menu-open='true'] {
+.view-homeShortcutsGrid-shortcuts:focus-within /* Good Morning cards hover */,
+.view-homeShortcutsGrid-shortcuts:hover,
+.view-homeShortcutsGrid-shortcuts[data-context-menu-open='true'] {
   background-color: var(--spice-card);
 }
 
@@ -1132,16 +1122,23 @@ p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by mus
 }
 
 /* PODCASTS */
+.WBxE9PQe96PpkE9RuTo5.TT1tIewS2iI8Uz8kLuQB /* Latest Episode box */{
+	background-color:var(--spice-main)
+}
+
+
+
 .p6DKqBcwmVtxmHt8ju43 /* removes un-needed divider */{
 	display:none;
 }
 
 .te8hrsPnSvx9SUkzV0ME.TT1tIewS2iI8Uz8kLuQB /* episode container grid */{
 	border:1px solid var(--spice-divider);
-	margin-bottom:-1px;
+	margin-bottom:-3px;
 	border-radius:0px;
 }
 
+.WBxE9PQe96PpkE9RuTo5.TT1tIewS2iI8Uz8kLuQB:hover /* hover latest podcast episode */,
 .TT1tIewS2iI8Uz8kLuQB:focus-within, 
 .TT1tIewS2iI8Uz8kLuQB:hover /* hover podcast episode */{
 	background-color:var(--tracklist-hover);

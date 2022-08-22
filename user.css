@@ -1,4 +1,4 @@
-/* Optimized for Spotify Version 1.1.90.859 and Spicetify version 2.11.1 */
+/* Optimized for Spotify Version 1.1.92 and Spicetify version 2.12.0 */
 /* GENERAL */
 :root{
 	--menu-shadow: rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 15px, rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 3px 1px;
@@ -140,14 +140,14 @@ a.main-collectionLinkButton-collectionLinkButton /* liked songs */{
 	width:85%;
 }
 
-.main-navBar-navBarLink .Type__TypeElement-goli3j-0.eHCcSU.ellipsis-one-line /* main item link weight */,
-.Type__TypeElement-goli3j-0.eHCcSU.main-createPlaylistButton-text.standalone-ellipsis-one-line /* Create Playlist */,
-.Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* Liked Songs & Your Episodes */ {
+.main-navBar-navBarLink .Type__TypeElement-goli3j-0.hWmToD.ellipsis-one-line /* main item link weight */,
+.Type__TypeElement-goli3j-0.hWmToD.main-createPlaylistButton-text.standalone-ellipsis-one-line /* Create Playlist */,
+.Type__TypeElement-goli3j-0.hWmToD.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* Liked Songs & Your Episodes */ {
 	font-weight:500;
 }
 
-.main-navBar-navBarLinkActive .Type__TypeElement-goli3j-0.eHCcSU.ellipsis-one-line /* active main item link weight */,
-a.main-collectionLinkButton-collectionLinkButton.main-collectionLinkButton-selected.active .Type__TypeElement-goli3j-0.eHCcSU.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* active Liked Songs or Your Episodes */{
+.main-navBar-navBarLinkActive .Type__TypeElement-goli3j-0.hWmToD.ellipsis-one-line /* active main item link weight */,
+a.main-collectionLinkButton-collectionLinkButton.main-collectionLinkButton-selected.active .Type__TypeElement-goli3j-0.hWmToD.standalone-ellipsis-one-line.main-collectionLinkButton-collectionLinkText /* active Liked Songs or Your Episodes */{
 	font-weight:700;
 }
 
@@ -425,14 +425,14 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 .main-button-outlined:hover,
 .main-playButton-PlayButton:focus, 
 .main-playButton-PlayButton:hover,
-.jjUWAm:focus,
-.jjUWAm:hover,
-.jEaMNl:hover .ButtonInner-sc-14ud5tc-0, 
-.jEaMNl:hover .ButtonFocus-sc-2hq6ey-0,
-.iaAUvZ:hover .ButtonInner-sc-14ud5tc-0, 
-.iaAUvZ:hover .ButtonFocus-sc-2hq6ey-0,
-.dSuJeu:hover .ButtonInner-sc-14ud5tc-0, 
-.dSuJeu:hover .ButtonFocus-sc-2hq6ey-0,
+.dhbbhc:hover .ButtonInner-sc-14ud5tc-0 /*Find Songs button on Liked Songs page */, 
+.dhbbhc:hover .ButtonFocus-sc-2hq6ey-0,
+.kgFBvD:hover .ButtonInner-sc-14ud5tc-0 /*top of playlist button */, 
+.kgFBvD:hover .ButtonFocus-sc-2hq6ey-0,
+.hgTVhT:hover .ButtonInner-sc-14ud5tc-0 /* card play buttons */, 
+.hgTVhT:hover .ButtonFocus-sc-2hq6ey-0,
+.cDKlWA:hover .ButtonInner-sc-14ud5tc-0 /* podcast episode play button */, 
+.cDKlWA:hover .ButtonFocus-sc-2hq6ey-0
 .hDlVgy:hover .ButtonInner-sc-14ud5tc-0 /*save button on playlsit name */, 
 .hDlVgy:hover .ButtonFocus-sc-2hq6ey-0,
 .ksogXh:hover /* Cancel button in modals */ {
@@ -441,7 +441,7 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 }
 
 .main-button-outlined /* these default as white, and text with main bg, when hovered have white outline. they should look like the "who to follow buttons" */,
-.jjUWAm /* TEMP for above */,
+.jyfxNy /* TEMP for above */,
 .main-trackList-addToPlaylistButton /* for when hovering on the row the button is in */,
 .main-button-secondary /* appears in modals */{
 	background-color:rgba(var(--spice-rgb-text),95%);
@@ -451,8 +451,8 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 
 .main-button-outlined:focus, 
 .main-button-outlined:hover,
-.jjUWAm:focus,
-.jjUWAm:hover,
+.jyfxNy:focus,
+.jyfxNy:hover,
 .main-button-secondary:focus,
 .main-button-secondary:hover {
 	background-color:rgba(var(--spice-rgb-text),85%);
@@ -881,7 +881,7 @@ a.marketplace-tabBar-headerItemLink.marketplace-tabBar-active {
 .main-heroCard-card.NGSgqDuaOH2VDApkzoxN.ZzUvBwE6uj5CAU2pjlQX .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /* Liked Songs title */,
 .main-heroCard-card.NGSgqDuaOH2VDApkzoxN.kST1INfbHSxzydJffBq_ .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /*Your Episodes title */,
 .ZXOyJPokUIObMnvTOJvc /*song or podcast names */,
-.Type__TypeElement-goli3j-0.hHrtFe.main-cardSubHeader-root .xhPzQCyks9pfizJj_PVK /*song/episode count */{
+.Type__TypeElement-goli3j-0.eDbSCl.main-cardSubHeader-root .xhPzQCyks9pfizJj_PVK /*song/episode count */{
 	color:#F7F9F9;
 }
 
@@ -1024,7 +1024,7 @@ p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by mus
 }
 
 .show-followButton-button /* Not Followed, normal */,
-.aAr9nYtPsG7P2LRzciXc {
+.idI9vydtCzXVhU1BaKLw {
 	color: var(--spice-main) !important;
 	border-radius:100px;
 	background-color:rgba(var(--spice-rgb-text),95%);
@@ -1032,20 +1032,20 @@ p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by mus
 }
 
 .show-followButton-button:hover,
-.aAr9nYtPsG7P2LRzciXc:hover /* Not Followed, hover */ {
+.idI9vydtCzXVhU1BaKLw:hover /* Not Followed, hover */ {
 	background-color:rgba(var(--spice-rgb-text),85%);
 	border:1px solid rgba(var(--spice-rgb-text),85%);
 }
 
 .show-followButton-button.iIqN__BtJ7Fh8CWMJ2kG,
-.aAr9nYtPsG7P2LRzciXc.fBTYgGyvIbHizHIj7AAX /* Following, normal */ {
+.idI9vydtCzXVhU1BaKLw.fEbcweEiUPPy2eaIaD3F /* Following, normal */ {
 	color: var(--spice-text) !important;
 	background-color:var(--spice-main);
 	border:1px solid var(--spice-divider);
 }
 
 .show-followButton-button.iIqN__BtJ7Fh8CWMJ2kG:hover,
-.aAr9nYtPsG7P2LRzciXc.fBTYgGyvIbHizHIj7AAX:hover /* Following, hover */ {
+.idI9vydtCzXVhU1BaKLw.fEbcweEiUPPy2eaIaD3F:hover /* Following, hover */ {
 	color: var(--spice-notification-error) !important;
 	background-color:rgba(var(--spice-rgb-notification-error),10%);
 	border:1px solid rgba(var(--spice-rgb-notification-error),37%);
@@ -1072,9 +1072,9 @@ p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by mus
 }
 
 /*Artist bio image */
-.ejNsts52hRq0uZcc_NXi .Type__TypeElement-goli3j-0.lpjVdv /*monthly listeners */,
-.fCtMzo.Type__TypeElement-goli3j-0.fCtMzo.CjnwbSTpODW56Gerg7X6 /*bio text */,
-.fCtMzo.Type__TypeElement-goli3j-0.fCtMzo.CjnwbSTpODW56Gerg7X6 > a {
+.ejNsts52hRq0uZcc_NXi .Type__TypeElement-goli3j-0.kPvsAs /*monthly listeners */,
+.ejNsts52hRq0uZcc_NXi .Type__TypeElement-goli3j-0.gwYBEX.CjnwbSTpODW56Gerg7X6 /*bio text */,
+.ejNsts52hRq0uZcc_NXi .Type__TypeElement-goli3j-0.gwYBEX.CjnwbSTpODW56Gerg7X6 > a {
 	color:#F7F9F9 !important;
 }
 

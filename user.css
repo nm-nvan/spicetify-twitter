@@ -52,6 +52,8 @@
 
 .playlist-playlist-playlistContent /* fix for playlist bg colour in 1.1.90 */,
 .BL__GuO2JsHMR6RgNfwY /* fix for artist page bg colour in 1.1.90 */,
+.Ft1cMGlqDsCbqmXQyeKN /* genre pages */,
+.fVB_YDdnaDlztX7CcWTA /* search top bar */,
 .XQIbZRhBVDxK2jEcGfeS /* fix for Tour dates bg colour in 1.1.90 */  {
 	background:var(--spice-main);
 }
@@ -301,7 +303,7 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
   position: absolute;
 }
 
-.player-controls__buttons /* remove marin under playback controls */ {
+.player-controls__buttons /* remove margin under playback controls */ {
   margin-bottom: 0;
 }
 

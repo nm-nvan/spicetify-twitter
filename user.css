@@ -1,4 +1,4 @@
-/* Optimized for Spotify Version 1.1.92 and Spicetify version 2.12.0 */
+/* Optimized for Spotify Version 1.1.93 and Spicetify version 2.13.1 */
 /* GENERAL */
 :root{
 	--menu-shadow: rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 15px, rgba(var(--spice-rgb-box-shadow),20%) 0px 0px 3px 1px;
@@ -19,6 +19,7 @@
 	font-family: 'Chirp-Regular',spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif !important;
 	box-shadow: none !important;
 	letter-spacing:0em !important;
+	line-height:1.1em !important;
 }
  
  /* COLOUR SETS */
@@ -796,20 +797,26 @@ span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
   display: none !important;
 }
 
-
-.view-homeShortcutsGrid-shortcuts /* Hide Good Morning/Afternoon cards */{
-	display:none;
-}
-
-.view-homeShortcutsGrid-shortcuts /* Good Morning card */ {
+.view-homeShortcutsGrid-shortcut /* Good Morning card */ {
   background-color: var(--spice-player);
   transition: none;
 }
 
-.view-homeShortcutsGrid-shortcuts:focus-within /* Good Morning cards hover */,
-.view-homeShortcutsGrid-shortcuts:hover,
-.view-homeShortcutsGrid-shortcuts[data-context-menu-open='true'] {
+.view-homeShortcutsGrid-shortcut:focus-within /* Good Morning cards hover */,
+.view-homeShortcutsGrid-shortcut:hover,
+.view-homeShortcutsGrid-shortcut[data-context-menu-open='true'] {
   background-color: var(--spice-card);
+}
+
+.view-homeShortcutsGrid-shortcuts /* Hide Good Morning/Afternoon cards */{
+    display: none !important;
+}
+
+/* Hide certain shelves */
+.main-shelf-shelf[aria-label='Jump back in'],
+.main-shelf-shelf[aria-label='Your top mixes'],
+.main-shelf-shelf[aria-label='Find your favourite new song today!']{
+    display: none !important;
 }
 
 .main-card-card /* home page cards */ {
@@ -991,32 +998,31 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 }
 
 /* LYRICS */
-.hW9km7ku6_iggdWDR_Lg {
-  --lyrics-color-background: var(--spice-main) !important;
-  --lyrics-color-active: var(--spice-button) !important;
-  --lyrics-color-inactive: var(--spice-text) !important;
-  --lyrics-color-messaging: var(--spice-text) !important;
+.lyrics-lyrics-background {
+	background-color:var(--spice-main);
 }
 
-.Q2RPoHcoxygOoPLXLMww .NHVfxGs2HwmI_fly2JC4.H2J92dVdr0ykdOX5azL1 /*inactive lyrics */ {
-	color:var(--lyrics-color-inactive);
+.lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric.lyrics-lyricsContent-highlight /*past*/ {
 	opacity:0.5;
 }
 
-.NHVfxGs2HwmI_fly2JC4.H2J92dVdr0ykdOX5azL1:hover /* hover inactive lyrics */ {
-	color:var(--lyrics-color-active);
+.lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric.lyrics-lyricsContent-highlight /*past*/,
+.lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric /*up coming*/,
+.lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric:hover /* hover */,
+.lyrics-lyricsContent-provider, .lyrics-lyricsContent-description{
+	color:var(--spice-text);
 }
 
-p.Type__TypeElement-goli3j-0.ebHsEf.W_EplVEAbZrZURqfLiQC /* hides "lyrics by musixmatch"*/{
-	visibility: hidden;
+.lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric.lyrics-lyricsContent-active /*active*/{
+	color:var(--spice-button);
 }
 
 /* ARTIST PAGE */
-.NJEYP path /* hide stock verified artist badge */{
+.b0NcxAbHvRbqgs2S8QDg path /* hide stock verified artist badge */{
 	display:none;
 }
 
-.NJEYP /* verified artist badge bg */ {
+.b0NcxAbHvRbqgs2S8QDg /* verified artist badge bg */ {
     -webkit-mask-image: url("./icons/verified-24.svg");
 	background-color:var(--spice-button);
 }

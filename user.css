@@ -102,6 +102,8 @@
 .home-active-icon path,
 .search-icon path,
 .search-active-icon path,
+.collection-icon path,
+.collection-active-icon path,
 .main-likedSongsButton-likedSongsIcon path {
   display: none !important;
 }
@@ -126,6 +128,16 @@
 	background-color: var(--spice-text); 
 }
 
+.collection-icon {
+	-webkit-mask-image: url('./icons/collection-24-off.svg');
+	background-color: var(--spice-text);
+}
+
+.collection-active-icon {
+	-webkit-mask-image: url('./icons/collection-24-on.svg');
+	background-color: var(--spice-text); 
+}
+
 .main-likedSongsButton-likedSongsIcon {
 	-webkit-mask-image: url('./icons/heart-24-on.svg');
 	background: var(--spice-heart); 	
@@ -134,6 +146,16 @@
 .main-navBar-navBarItem /* adjust nav bar tabs */,
 div.GlueDropTarget.personal-library /*adjust playlist & liked tabs */{
 	padding:5px 8px;
+}
+
+/* Icon colours */
+.collection-active-icon, 
+.collection-icon, 
+.home-active-icon, 
+.home-icon, .premiumSpotifyIcon, 
+.search-active-icon, 
+.search-icon {
+	color:var(--spice-text);
 }
 
 .main-navBar-navBarLink /* main item link colour */,
@@ -428,14 +450,15 @@ button.Button-qlcn5g-0.iaAUvz /*play/pause buttons most other places */{
 .main-button-outlined:hover,
 .main-playButton-PlayButton:focus, 
 .main-playButton-PlayButton:hover,
+.jyfxNy:hover /* outlined buttons */,
 .dhbbhc:hover .ButtonInner-sc-14ud5tc-0 /*Find Songs button on Liked Songs page */, 
 .dhbbhc:hover .ButtonFocus-sc-2hq6ey-0,
 .kgFBvD:hover .ButtonInner-sc-14ud5tc-0 /*top of playlist button */, 
 .kgFBvD:hover .ButtonFocus-sc-2hq6ey-0,
 .hgTVhT:hover .ButtonInner-sc-14ud5tc-0 /* card play buttons */, 
 .hgTVhT:hover .ButtonFocus-sc-2hq6ey-0,
-.cDKlWA:hover .ButtonInner-sc-14ud5tc-0 /* podcast episode play button */, 
-.cDKlWA:hover .ButtonFocus-sc-2hq6ey-0
+.khHjww:hover .ButtonInner-sc-14ud5tc-0 /* Find Podcasts on Your Episodes page */, 
+.khHjww:hover .ButtonFocus-sc-2hq6ey-0
 .hDlVgy:hover .ButtonInner-sc-14ud5tc-0 /*save button on playlsit name */, 
 .hDlVgy:hover .ButtonFocus-sc-2hq6ey-0,
 .ksogXh:hover /* Cancel button in modals */ {
@@ -853,19 +876,18 @@ h3.i2yp6pOoZpYZLd5QWguN /* smaller cards */ {
 }
 
 /* Your Library tab bar link appearance */
-a.JdlKTdpMquftpMwwegZo /* in-active tabs */,
+a.queue-tabBar-headerItemLink /* in-active tabs */,
 a.marketplace-tabBar-headerItemLink {
 	color:var(--spice-subtext);
 	border-radius:0px;
 }
 
-a.JdlKTdpMquftpMwwegZo:hover /* hover in-active tabs */,
-a.marketplace-tabBar-headerItemLink:hover,
-a.JdlKTdpMquftpMwwegZo.oaNVBli46GtVjaQKB15g:hover /*hover active tab */ {
+a.queue-tabBar-headerItemLink:hover /* hover in-active tabs */,
+a.marketplace-tabBar-headerItemLink:hover {
 	background-color:var(--nav-active);
 }
 
-a.JdlKTdpMquftpMwwegZo.oaNVBli46GtVjaQKB15g /* active tab */,
+a.queue-tabBar-active /* active tab */,
 a.marketplace-tabBar-headerItemLink.marketplace-tabBar-active {
 	background-color: unset;
 	border-bottom: 4px solid var(--spice-button);
@@ -887,10 +909,10 @@ a.marketplace-tabBar-headerItemLink.marketplace-tabBar-active {
 }
 
 /* Text in Liked Songs Gradient */
-.main-heroCard-card.NGSgqDuaOH2VDApkzoxN.ZzUvBwE6uj5CAU2pjlQX .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /* Liked Songs title */,
-.main-heroCard-card.NGSgqDuaOH2VDApkzoxN.kST1INfbHSxzydJffBq_ .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /*Your Episodes title */,
-.ZXOyJPokUIObMnvTOJvc /*song or podcast names */,
-.Type__TypeElement-goli3j-0.eDbSCl.main-cardSubHeader-root .xhPzQCyks9pfizJj_PVK /*song/episode count */{
+.main-heroCard-card.collection-collectionEntityHeroCard-likedSongs.collection-collectionEntityHeroCard-container .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /* Liked Songs title */,
+.main-heroCard-card.collection-collectionEntityHeroCard-likedSongs.kST1INfbHSxzydJffBq_ .main-heroCard-draggable .main-heroCard-cardMetadata a.main-cardHeader-link /*Your Episodes title */,
+.collection-collectionEntityHeroCard-tracksContainer /*song or podcast names */,
+.collection-collectionEntityHeroCard-descriptionContainer /*song/episode count */{
 	color:#F7F9F9;
 }
 
@@ -1136,13 +1158,13 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 
 
 
-.p6DKqBcwmVtxmHt8ju43 /* removes un-needed divider */{
+.cJJXVm4gQW6AdfCQRhpX /* removes un-needed divider */{
 	display:none;
 }
 
 .te8hrsPnSvx9SUkzV0ME.TT1tIewS2iI8Uz8kLuQB /* episode container grid */{
 	border:1px solid var(--spice-divider);
-	margin-bottom:-3px;
+	margin-bottom:-1px;
 	border-radius:0px;
 }
 
@@ -1168,18 +1190,7 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 	background-color:var(--spice-button) !important;
 }
 
-/* replace share icon */
-.Button-sc-1dqy6lx-0.otxFo.pvGZ831aNzHTQMZ8CA_u path {
-	display:none;
-}
-
-.Button-sc-1dqy6lx-0.otxFo.pvGZ831aNzHTQMZ8CA_u {
-	background-color:var(--spice-subtext);
-	-webkit-mask-image:url('./icons/share-24.svg');
-	padding:1px;
-}
-.otxFo:hover {
-	background-color:var(--spice-button) !important;
+.fBa-DdB:hover /* share button */ {
 	transform:scale(1.0);
 }
 

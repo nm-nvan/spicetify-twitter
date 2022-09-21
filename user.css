@@ -400,29 +400,9 @@ div.GlueDropTarget.personal-library >*.active:focus /* removes bg colour while L
 	color: #F7F9F9;
 }
 
-/* replace queue icon */
-.Button-sc-1dqy6lx-0.hyWUsx path{
-	display:none;
-}
-
-.Button-sc-1dqy6lx-0.hyWUsx {
-	background-color:var(--spice-subtext);
-	-webkit-mask-image:url('./icons/list-16-off.svg');
-	border-radius:0px;
-	padding:0px;
-	margin:8px 4px;
-}
-
-.Button-sc-1dqy6lx-0.hyWUsx:focus,
-.Button-sc-1dqy6lx-0.hyWUsx:hover {
-	background-color:var(--spice-text);
-}
-
-.Button-sc-1dqy6lx-0.hyWUsx.control-button--active {
-	background-color:var(--spice-button);
-}
-.Button-sc-1dqy6lx-0.hyWUsx:hover,
-.Button-sc-1dqy6lx-0.hyWUsx:focus {
+/* queue icon */
+.Button-sc-1dqy6lx-0.ehgHWV:hover,
+.Button-sc-1dqy6lx-0.ehgHWV:focus {
   transform: scale(1) !important;
   -webkit-transform: scale(1) !important;
 }
@@ -761,20 +741,11 @@ background-color:var(--spice-button-active);
 }
 
 /* CONTEXT MENUS */
-ul.main-contextMenu-menu /* main context menus */,
-.connect-device-list-container /* connect to a device menu item */{
+ul.main-contextMenu-menu /* main context menus */ {
 	background:var(--spice-main);
 	border-radius:var(--menu-radius);
 	box-shadow: var(--menu-shadow) !important;
 	padding:0px;
-}
-
-.connect-device-list-content /* content of the connect to devices menu */ {
-	border-radius:var(--menu-radius);
-}
-
-.connect-device-list-item /* connect to a device menu item */{
-	background:var(--spice-main);
 }
 
 span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
@@ -787,8 +758,6 @@ span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
 .main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):focus /*menu items when hovering */, 
 .main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):hover,
 .main-contextMenu-menuItemButton[aria-expanded=true],
-.connect-device-list-item:focus /* connect to a device menu item */, 
-.connect-device-list-item:hover,
 .bookmark-filter,
 .bookmark-menuitem:hover,
 .bookmark-card:hover {
@@ -809,6 +778,31 @@ span.ellipsis-one-line.main-type-mesto/*text colour in menus */,
 .main-deleteFolderDialog-buttonContainer,
 .main-deletePlaylistDialog-buttonContainer {
   justify-content: space-between !important;
+}
+
+/*Connect to device menus */
+.connect-device-list-container /* connect to a device menu item */,
+.aCtCKL9BxAoHeVZS0uRs /*connect-device-list-container temp */ {
+	background:var(--spice-main);
+	border-radius:var(--menu-radius);
+	box-shadow: var(--menu-shadow) !important;
+}
+
+.connect-device-list-content /* content of the connect to devices menu */ {
+	border-radius:var(--menu-radius);
+}
+
+.connect-device-list-item /* connect to a device menu item */,
+.hcuLp8V4uEEfWZ4k6aLV /*.connect-device-list-item temp */{
+	background:var(--spice-main);
+}
+
+/* hover connect to device menu items */
+.bzmsYhq8qXerwAFF0AUJ:focus-within .ErSD7TARZzk270zuVjoi:not(:disabled), 
+.bzmsYhq8qXerwAFF0AUJ:hover .ErSD7TARZzk270zuVjoi:not(:disabled),
+.rsaJ_PD5Wsx9a9H2IyV_:focus, 
+.rsaJ_PD5Wsx9a9H2IyV_:hover {
+	background-color: var(--tracklist-hover);
 }
 
 /* HOME PAGE */
@@ -1022,6 +1016,10 @@ img.main-image-image.CmkY1Ag0tJDfnFXbGgju.main-entityHeader-shadow {
 /* LYRICS */
 .lyrics-lyrics-background {
 	background-color:var(--spice-main);
+}
+
+.lyrics-lyricsContent-lyric {
+	padding-bottom:12px;
 }
 
 .lyrics-lyrics-contentContainer .lyrics-lyricsContent-lyric.lyrics-lyricsContent-highlight /*past*/ {
